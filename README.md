@@ -1,8 +1,8 @@
-Role Name
-=========
+ansible-role-ceph-install
+=========================
 
 name: ansible-role-ceph-install
-The purpose of this role is to install ceph on the nodes specified. 
+The purpose of this role is to install ceph prereqs on the nodes specified. 
 
 Requirements
 ------------
@@ -17,11 +17,11 @@ Role Variables
 
 Most variables required for this role to run are currently set in the defaults directory of the role and dont need to be set. 
 ```
-##OpenShift Versioning variables. Default values set to the following already.
-     ceph_version: 4
+Default values set to the following already.
+  ceph_version: 3
 
 
-## Required variables
+Required variables
 However you will need the following.
 ```
 
