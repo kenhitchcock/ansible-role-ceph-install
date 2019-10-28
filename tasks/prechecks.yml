@@ -1,0 +1,8 @@
+---
+# Pre Checks for Ceph
+
+- name: "Make sure that Python is installed"
+  package:
+    name: "{{item}}"
+    state: present
+  loop: "{{ceph_packages}}"

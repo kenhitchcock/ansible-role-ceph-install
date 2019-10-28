@@ -1,0 +1,8 @@
+---
+
+- block:
+    - name: "PreChecks"
+      include_tasks: prechecks.yml
+      tags: [prechecks]
+
+  become: true

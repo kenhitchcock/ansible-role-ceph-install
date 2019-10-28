@@ -1,0 +1,7 @@
+---
+# defaults file
+
+ceph_packages:
+  - python
+  - redhat-lsb-core
+  - ntp
