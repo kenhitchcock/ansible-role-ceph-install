@@ -16,20 +16,20 @@ Role Variables
 --------------
 
 Most variables required for this role to run are currently set in the defaults directory of the role and dont need to be set. 
-
-OpenShift Versioning variables. Default values set to the following already.
+```
+##OpenShift Versioning variables. Default values set to the following already.
      ceph_version: 4
 
 
 ## Required variables
 However you will need the following.
-
+```
 
 
 
 Example Playbook
 ----------------
-
+```
 - name: "Ceph Install playbook"
   hosts: ceph  
   become: true
@@ -38,7 +38,7 @@ Example Playbook
     - name: "Build Ceph Cluster"
       include_role:
         name: ../roles/ansible-role-ceph-install
-
+```
 
 License
 -------
